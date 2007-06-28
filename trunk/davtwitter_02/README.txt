@@ -40,3 +40,12 @@ The install process is preaty strightforward:
 	This would run the script every 30 min ...
 
 5.	Enjoy
+
+CHANGES
+=======
+
+Version 03
+* Used the tinyurl API instead of matching a result with Regular Expressions.
+
+Version 02
+* Initial Alfa Release
