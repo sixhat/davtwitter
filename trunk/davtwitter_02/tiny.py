@@ -24,20 +24,13 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
 import urllib
 import urllib2
-import re
 
 def tinyGet(texto):
-	url = 'http://tinyurl.com/create.php'
+	url = 'http://tinyurl.com/api-create.php'
 	req = urllib2.Request(url+'?url='+texto)
 	response = urllib2.urlopen(req)
-	the_page = response.read()
-
-	tinysite = re.compile(r'''<input type=hidden name=tinyurl value="(.*)"''',re.IGNORECASE)
-	
-	matchobj = tinysite.search(the_page);
-	
-	return matchobj.group(1)
-
+	the_page = response.read()	
+	return the_page
 
 def main():
 	pass
