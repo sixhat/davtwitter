@@ -5,7 +5,7 @@ site 	: http://code.google.com/p/davtwitter/
 REQUIREMENTS:
 
 * Python
-* Universal Feedparser from Dave Winer
+* Universal Feedparser from Mark Pilgrim
   http://feedparser.org/
 
 INSTALL
